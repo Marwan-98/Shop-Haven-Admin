@@ -1,3 +1,29 @@
 {
-  "extends": "next/core-web-vitals"
+  "root": true,
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended"
+  ],
+  "plugins": [
+    "@stylistic"
+  ],
+  "rules": {
+    "@stylistic/object-curly-spacing": ["error", "always"],
+    "@stylistic/semi": "error",
+    "@stylistic/key-spacing": "error",
+    "@stylistic/keyword-spacing": "error",
+    "@stylistic/member-delimiter-style": [
+      "error",
+      {
+        "multiline": {
+          "delimiter": "semi",
+          "requireLast": true
+        },
+        "singleline": {
+          "delimiter": "semi",
+          "requireLast": false
+        }
+      }
+  ]
+  }
 }
