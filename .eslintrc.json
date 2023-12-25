@@ -1,5 +1,8 @@
 {
   "root": true,
+  "env": {
+    "es2023": true
+  },
   "extends": [
     "next/core-web-vitals",
     "eslint:recommended"
