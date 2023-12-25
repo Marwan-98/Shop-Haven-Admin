@@ -1,19 +1,19 @@
-import React from 'react';
+import React from "react";
 
-import type { Metadata } from 'next';
-import { ClerkProvider } from '@clerk/nextjs';
-import { Inter } from 'next/font/google';
+import type { Metadata } from "next";
+import { ClerkProvider } from "@clerk/nextjs";
+import { Inter } from "next/font/google";
 
-import ToasterProvider from '@/providers/toast-provider';
-import ModalProvider from '@/providers/modal-provider';
+import ToasterProvider from "@/providers/toast-provider";
+import ModalProvider from "@/providers/modal-provider";
 
-import './globals.css';
+import "./globals.css";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Admin Dashboard',
-  description: 'Admin Dashboard',
+  title: "Admin Dashboard",
+  description: "Admin Dashboard",
 };
 
 export default function RootLayout({

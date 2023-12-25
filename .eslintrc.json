@@ -15,6 +15,8 @@
     "@stylistic/semi": "error",
     "@stylistic/key-spacing": "error",
     "@stylistic/keyword-spacing": "error",
+    "@stylistic/quotes": ["error", "double"],
+    "@stylistic/eol-last": ["error", "always"],
     "@stylistic/member-delimiter-style": [
       "error",
       {
@@ -27,6 +29,26 @@
           "requireLast": false
         }
       }
-  ]
+    ],
+    "sort-imports": [
+      "error",
+      {
+        "ignoreCase": true,
+        "ignoreDeclarationSort": true
+      }
+    ],
+    "import/order": [
+      "error",
+      { "groups":
+        [
+          "external",
+          "builtin",
+          "internal",
+          "sibling",
+          "parent",
+          "index"
+        ]
+      }
+    ]
   }
 }

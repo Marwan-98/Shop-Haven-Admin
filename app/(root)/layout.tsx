@@ -1,7 +1,7 @@
-import React from 'react';
-import { auth } from '@clerk/nextjs';
-import { redirect } from 'next/navigation';
-import prismadb from '@/lib/prismadb';
+import React from "react";
+import { auth } from "@clerk/nextjs";
+import { redirect } from "next/navigation";
+import prismadb from "@/lib/prismadb";
 
 const SetupLayout = async ({
     children
