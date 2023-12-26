@@ -9,7 +9,7 @@ const useOrigin = () => {
     }, []);
 
     if (!mounted) {
-        return null;
+        return "";
     }
 
   return origin;
