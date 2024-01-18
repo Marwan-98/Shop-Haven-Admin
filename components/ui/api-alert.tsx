@@ -1,10 +1,12 @@
 "use client";
 
-import React from "react";
 import { Copy, Server } from "lucide-react";
+import React from "react";
 import toast from "react-hot-toast";
+
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Badge, BadgeProps } from "@/components/ui/badge";
+
 import { Button } from "./button";
 
 interface ApiAlertProps {

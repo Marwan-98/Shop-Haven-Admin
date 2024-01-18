@@ -1,5 +1,7 @@
 import React from "react";
+
 import prismadb from "@/lib/prismadb";
+
 import ProductForm from "./components/product-form";
 
 const ProductPage = async ({

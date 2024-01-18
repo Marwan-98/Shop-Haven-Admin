@@ -8,9 +8,12 @@
     "eslint:recommended"
   ],
   "plugins": [
-    "@stylistic"
+    "@stylistic",
+    "simple-import-sort"
   ],
   "rules": {
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
     "@stylistic/object-curly-spacing": ["error", "always"],
     "@stylistic/semi": "error",
     "@stylistic/key-spacing": "error",
@@ -28,26 +31,6 @@
           "delimiter": "semi",
           "requireLast": false
         }
-      }
-    ],
-    "sort-imports": [
-      "error",
-      {
-        "ignoreCase": true,
-        "ignoreDeclarationSort": true
-      }
-    ],
-    "import/order": [
-      "error",
-      { "groups":
-        [
-          "external",
-          "builtin",
-          "internal",
-          "sibling",
-          "parent",
-          "index"
-        ]
       }
     ]
   }

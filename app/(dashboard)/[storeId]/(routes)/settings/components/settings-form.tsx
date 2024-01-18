@@ -1,21 +1,22 @@
 "use client";
 
-import { Store } from "@prisma/client";
-import React, { useState } from "react";
-import { Trash } from "lucide-react";
-import * as z from "zod";
-import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import toast from "react-hot-toast";
+import { Store } from "@prisma/client";
 import axios from "axios";
+import { Trash } from "lucide-react";
 import { useParams, useRouter } from "next/navigation";
-import Heading from "@/components/ui/heading";
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
+import React, { useState } from "react";
+import { useForm } from "react-hook-form";
+import toast from "react-hot-toast";
+import * as z from "zod";
+
 import AlertModal from "@/components/modals/alert-modal";
 import ApiAlert from "@/components/ui/api-alert";
+import { Button } from "@/components/ui/button";
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
+import Heading from "@/components/ui/heading";
+import { Input } from "@/components/ui/input";
+import { Separator } from "@/components/ui/separator";
 import useOrigin from "@/hooks/use-origin";
 
 interface SettingsFormProps {

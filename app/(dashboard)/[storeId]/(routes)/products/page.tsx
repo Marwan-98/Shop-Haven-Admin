@@ -1,7 +1,9 @@
-import React from "react";
 import { format } from "date-fns";
+import React from "react";
+
 import prismadb from "@/lib/prismadb";
 import { formatter } from "@/lib/utils";
+
 import ProductClient from "./components/client";
 import { ProductColumn } from "./components/columns";
 
